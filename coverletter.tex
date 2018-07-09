@@ -1,0 +1,132 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+\definecolor{link}{HTML}{2020C0}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./profile.jpg}
+\name{Erik}{Dubbelboer}
+\position{Software Architect{\enskip\cdotp\enskip}DevOps}
+\address{From The Netherlands currently living in Kuala Lumpur, Malaysia}
+
+\mobile{(+31) 6 51 24 53 74}
+\email{erik@dubbelboer.com}
+\homepage{blog.dubbelboer.com}
+\github{erikdubbelboer}
+\linkedin{erikdubbelboer}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipientname{DigitalOcean}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Senior Engineer: Insights}
+% How the letter is opened
+\letteropening{Dear DigitalOcean,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Erik Dubbelboer~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I'm Erik Dubbelboer. I was born in Utrecht in the Netherlands. When I was 16 I started programming computers, building an AI for Half-Life in C++, a year later I created my own simple multi-tasking operating system. Before I was done with my studies I had already founded multiple companies with friends. One of these companies led me to live in Kuala Lumpur, Malaysia where I met my wife. My current company Atomx.com is coming to an end and I'm ready for a new challenge.
+
+\lettersection{Why DigitalOcean?}
+In the topic on \href{https://www.reddit.com/r/golang/comments/8wdfk6/digitalocean\_is\_looking\_for\_a\_sr\_backend\_go/}{\textcolor{link}{Reddit}} I read `\textit{Ideally at least 3 years of experience with low latency, high throughput, data processing at scale using Go.}` which fits me perfectly. I have 4 years experience with Go building an advertising exchange which required latencies less than 100ms for thousands of requests per second. The exchange also featured a fast realtime reporting pipeline allowing users to run reports on many metrics and dimensions. I like working with big amounts of data. The other part that a liked about the job is that it can be done remotely but has the option to go to an office as well.
+
+\lettersection{Why Me?}
+I already have a lot of experience with the technologies and concepts the job requires. I like analyzing large amounts of data to find interesting patterns, something I did a lot at atomx.com as well. I'm not really tied down to one specific location. We are currently living in Kuala Lumpur but we travel a lot and spend at least 3 months a year in Amsterdam for the last 3 years. To keep life interesting we planned to move to Amsterdam but moving to New York would work as well.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
